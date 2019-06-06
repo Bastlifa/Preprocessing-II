@@ -396,17 +396,17 @@ nav a:hover {
   background-color: transparent;
   color: transparent;
   border: none;
+  height: 4.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
   animation-name: buttonAnim;
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 .home .content-pick .btnMntn button {
   background-image: url(../img/mntn.png);
-  background-repeat: no-repeat;
-  background-position: 20 20;
   /* put the height and width of your image here */
-  height: 4.5rem;
-  width: 2rem;
   border: none;
 }
 .home .content-pick .btnMntn button span {

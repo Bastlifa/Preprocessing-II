@@ -159,20 +159,29 @@
 
     .btnMntn
     {
+      
       background-color: transparent;
       color: transparent;
       border:none;
-      button {
+      height:4.5rem;
+      background-repeat: no-repeat;
+      // width:100%;
+      background-position: 50% 50%;
+      background-size: contain;
+      button 
+      {
+        // position: absolute;
+        // display: block;
         background-image: url(../img/mntn.png);
-        background-repeat: no-repeat;
-        background-position: 20 20;
+    
         /* put the height and width of your image here */
-        height: 4.5rem;
-        width: 2rem;
-        border: none;
+        // width: 2rem;
+        // height: 4.5rem;
+        border: none;  
       }
       
-      button span {
+      button span 
+      {
         display: none;
       }
       animation-name: buttonAnim;
