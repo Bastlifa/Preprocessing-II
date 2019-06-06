@@ -8,12 +8,13 @@
     align-items: @algnItm;
 }
 
-.buttonMixin(@btnWidth: 20rem; @btnHeight: 4.5rem; @borderRad: 1.5rem;)
+.buttonMixin(@btnWidth: 20rem; @btnHeight: 4.5rem; @borderRad: 1.5rem; @bgCol: darken(mix(@button-bg, green, 85%), 7%);)
 {
-    background-color: @button-bg;
+    background-color: @bgCol;
     width:@btnWidth;
     height: @btnHeight;
     border-radius: @borderRad;
+    border-width:.05rem;
     color: white;
     font-size: 1.8rem;
 }

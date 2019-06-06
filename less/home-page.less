@@ -116,11 +116,16 @@
   }
 
   .content-destination {
-    width: 100%;
+    width: 75%;
     margin: 0 auto 30px;
-
+    .flexBoxPM(@colRowWrap: column nowrap; @justifyCont: space-between; @algnItm: flex-start;);
+    
     img {
       border-radius: 10px;
+    }
+    @media @mobile
+    {
+      width:100%;
     }
   }
 
@@ -129,6 +134,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
     @media @mobile
       {
         .flexBoxPM(@colRowWrap: column nowrap; @justifyCont: space-between; @algnItm: center);
@@ -147,7 +153,7 @@
       .buttonMixin();
       @media @mobile
       {
-        .buttonMixin(@btnWidth: 36rem; @btnHeight: 4.5rem; @borderRad: 1.5rem;);
+        .buttonMixin(@btnWidth: 36rem; @btnHeight: 4.5rem; @borderRad: 1.5rem; @button-bg;);
       }
     }
   }
