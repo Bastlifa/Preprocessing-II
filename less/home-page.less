@@ -1,12 +1,29 @@
 .home {
 
+  header
+  {
+      max-width: 800px;
+      width: 100%;
+      margin: 2.25rem auto;
+      .flexBoxPM(row nowrap, space-between, center);
+  }
+
+  hr
+  {
+    padding-top: 0.4rem;
+    border-bottom: 1px dashed @navigation-border;
+    border-top:none;
+    max-width:120rem;
+    margin-bottom: 0;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+  
     
     .text-content {
       width: 48%;
