@@ -156,6 +156,36 @@
         .buttonMixin(@btnWidth: 36rem; @btnHeight: 4.5rem; @borderRad: 1.5rem; @button-bg;);
       }
     }
+
+    .btnMntn
+    {
+      background-color: transparent;
+      color: transparent;
+      border:none;
+      button {
+        background-image: url(../img/mntn.png);
+        background-repeat: no-repeat;
+        background-position: 20 20;
+        /* put the height and width of your image here */
+        height: 4.5rem;
+        width: 2rem;
+        border: none;
+      }
+      
+      button span {
+        display: none;
+      }
+      animation-name: buttonAnim;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes buttonAnim
+    {
+      0% {background-image: url(/img/mntn1.png);}
+      50% {background-image: url(/img/mntn2.png);}
+      75% {background-image: url(/img/mntn3.png);}
+      100% {background-image: url(/img/mntn4.png);}
+    }
   }
 }
 //home
