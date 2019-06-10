@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+nav
+{
+    .flexBoxPM(row nowrap, space-around, center);
+    padding-right: 1.35rem;
+    @media @mobile
+    {
+        margin-top: 1.5rem;
+        margin-left:1.3rem;
+    }
+    a
+    {
+        margin: 0 1.57rem;
+        font-size: 1.6rem;
+        color: black;
+        &:hover
+        {
+            color: grey;
+        }
+        text-decoration: none;
+        @media @mobile
+        {
+            margin-left: @navAMarginLR;
+            margin-right: @navAMarginLR;
+            // margin-top: 1.5rem;
+        }
+    }
+}
+
